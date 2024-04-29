@@ -55,7 +55,7 @@ app.post('/login', function (req, res, next) {
 
 function restrict(request, response, next) {
   if (request.session.user) {
-    next();
+    next()
   } else {
     request.session.error = 'Access denied!';
     response.redirect('/login')
