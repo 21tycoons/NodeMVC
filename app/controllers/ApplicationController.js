@@ -89,9 +89,13 @@ function authenticate(name, pass, fn) {
   // the hash against the pass / salt, if there is a match we
   // found the user
   hash({ password: pass, salt: user.salt }, function (err, pass, salt, hash) {
-    if (err) return fn(err);
-    if (hash === user.hash) return fn(null, user)
+    if (err) return fn(err)
+
+    if (hash === user.hash) {
+      console.log('Authenticated %s', name, '!')
+      return fn(null, user)
+    }
+
     fn(null, null)
   })
-  console.log('Authenticated %s', name, '!')
 }
