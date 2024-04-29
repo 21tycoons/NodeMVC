@@ -26,7 +26,7 @@ app.post('/login', function (req, res, next) {
     if (user) {
       // Regenerate session when signing in
       // to prevent fixation
-      req.session.regenerate(function(){
+      req.session.regenerate( () => {
         // Store the user's primary key
         // in the session store to be retrieved,
         // or in this case the entire user object
