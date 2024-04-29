@@ -10,6 +10,10 @@ app.get('/restricted', restrict, function(request, response) {
   response.send('Wahoo! restricted area, click to <a href="/logout">logout</a>')
 })
 
+app.get('/menu', (request, response) => {
+  response.render('menu')
+})
+
 app.get('/logout', function(request, response) {
   request.session.destroy( () => {
     response.redirect('/')
