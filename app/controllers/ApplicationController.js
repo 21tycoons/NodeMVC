@@ -11,7 +11,7 @@ app.get('/restricted', restrict, function(request, response) {
 })
 
 app.get('/logout', function(request, response) {
-  request.session.destroy(() => {
+  request.session.destroy( () => {
     response.redirect('/')
   })
 })
