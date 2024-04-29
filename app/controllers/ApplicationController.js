@@ -61,7 +61,8 @@ function restrict(request, response, next) {
 // dummy database
 
 var users = {
-  Liroy: { name: 'Liroy' }
+  Liroy: { name: 'Liroy' },
+  Wendy: { name: 'Wendy' }
 }
 
 // when you create a user, generate a salt
