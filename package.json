@@ -1,7 +1,6 @@
 {
   "name": "Express MVC",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start": "node config/server.js",
     "dev":   "node config/server.js",
