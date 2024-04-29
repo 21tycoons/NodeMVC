@@ -11,7 +11,7 @@ app.get('/restricted', restrict, function(request, response) {
 })
 
 app.get('/pug', (request, response) => {
-  response.render('pug')
+  response.render('pug', { title: 'Hey Pug', message: 'Hello Pug!' })
 })
 
 app.get('/menu', (request, response) => {
