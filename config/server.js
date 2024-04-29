@@ -21,8 +21,10 @@ require('../app/middleware/session')
 
 require('../app/controllers/ApplicationController')
 
+const PORT = process.env.PORT || 3100
+
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(3100)
-  console.log('Express started on port 3100')
+  app.listen(PORT)
+  console.log('Express started on port ' + PORT)
 }
