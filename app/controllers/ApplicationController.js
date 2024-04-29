@@ -7,13 +7,11 @@ app.get('/', function(request, response) {
 })
 
 app.get('/restricted', restrict, function(request, response) {
-  response.send('Wahoo! restricted area, click to <a href="/logout">logout</a>');
+  response.send('Wahoo! restricted area, click to <a href="/logout">logout</a>')
 })
 
 app.get('/logout', function(request, response) {
-  // destroy the user's session to log them out
-  // will be re-created next request
-  request.session.destroy(function(){
+  request.session.destroy(() => {
     response.redirect('/')
   })
 })
