@@ -39,7 +39,6 @@ app.post('/login', function (req, res, next) {
     } else {
       req.session.error = 'Authentication failed, please check your '
         + ' username and password.'
-        + ' (use "tj" and "foobar")'
       res.redirect('/login')
     }
   })
