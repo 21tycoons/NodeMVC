@@ -41,6 +41,7 @@ app.post('/login', function (req, res, next) {
         res.redirect('back')
       })
     } else {
+      req.session.user = null
       req.session.error = 'Authentication failed, please check your '
         + ' username and password.'
       res.redirect('/login')
@@ -73,7 +74,7 @@ var users = {
 
 const PASSWORD = 'admin'
 hash({ password: PASSWORD }, function (err, pass, salt, hash) {
-  if (err) throw err;
+  if (err) throw err
   // store the salt & hash in the "db"
   users.Liroy.salt = salt
   users.Liroy.hash = hash
@@ -84,7 +85,7 @@ hash({ password: PASSWORD }, function (err, pass, salt, hash) {
 
 function authenticate(name, pass, fn) {
   console.log('Authenticating %s', name, '...')
-  var user = users[name];
+  var user = users[name]
   // query the db for the given username
   if (!user) return fn(null, null)
   // apply the same algorithm to the POSTed password, applying
