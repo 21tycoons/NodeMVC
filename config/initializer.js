@@ -5,7 +5,6 @@ const path = require('path')
 const mustacheExpress = require('mustache-express')
 app.engine('mustache', mustacheExpress())
 app.set('view engine', 'mustache')
-app.set('views', path.join(__dirname, '../app/views'))
 
 
 app.set('view engine', 'ejs')
