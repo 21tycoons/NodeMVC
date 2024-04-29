@@ -8,6 +8,6 @@ app.engine('mustache', mustacheExpress())
 app.engine('pug', pug.__express)
 
 
-const VIEW_ENGINE = 'ejs'
-app.set('view engine', VIEW_ENGINE)
+const VIEW_ENGINES = { PUG: 'pug', EJS: 'ejs', Mustache: 'mustache' }
+app.set('view engine', VIEW_ENGINES.EJS)
 app.set('views', path.join(__dirname, '../app/views'))
