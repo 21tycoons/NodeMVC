@@ -1,4 +1,4 @@
-const express = require('../../../..')
+const express = require('express')
 const app     = require('../../config/server')
 
 
