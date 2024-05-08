@@ -1,7 +1,6 @@
 const app  = require('../../config/server')
 const hash = require('pbkdf2-password')()
 
-
 app.get('/', function(request, response) {
   response.redirect('/login')
 })
