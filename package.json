@@ -10,6 +10,7 @@
   "author": "21tycoons LLC",
   "description": "",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
