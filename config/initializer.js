@@ -1,10 +1,10 @@
-const app  = require('./server')
-const path = require('path')
+const app  = require( './server' )
+const path = require( 'path' )
 
-const mustacheExpress = require('mustache-express')
-const pug = require('pug')
-app.engine('mustache', mustacheExpress())
-app.engine('pug', pug.__express)
+const mustacheExpress = require( 'mustache-express' )
+const pug = require( 'pug' )
+app.engine( 'mustache', mustacheExpress() )
+app.engine( 'pug', pug.__express )
 
 // Here you can set your desired template engine, options are the three below but you can add extra.
 const VIEW_ENGINES = { EJS: 'ejs', Mustache: 'mustache', PUG: 'pug' }
