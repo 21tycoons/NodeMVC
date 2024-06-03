@@ -21,6 +21,8 @@ require('../app/middleware/session')
 
 require('../app/controllers/application_controller')
 
+// Models
+
 const PORT = process.env.PORT || 3100
 
 /* istanbul ignore next */
