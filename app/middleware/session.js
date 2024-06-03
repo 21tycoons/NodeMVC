@@ -15,7 +15,7 @@ app.use( function ( request, response, next ) {
   delete request.session.error
   delete request.session.success
   response.locals.message = ''
-  if ( error ) response.locals.message = '<p class="msg error">' + error + '</p>'
-  if (message) response.locals.message = '<p class="msg success">' + message + '</p>'
+  if ( error )   response.locals.message = '<p class="msg error">' + error + '</p>'
+  if ( message ) response.locals.message = '<p class="msg success">' + message + '</p>'
   next()
 } )
