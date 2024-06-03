@@ -1,13 +1,13 @@
 const app  = require('../../config/server')
 const hash = require('pbkdf2-password')()
 
-app.get('/', function(request, response) {
-  response.redirect('/login')
-})
+app.get( '/', function ( request, response ) {
+  response.redirect( '/login' )
+} )
 
-app.get('/restricted', restrict, function(request, response) {
+app.get( '/restricted', restrict, function ( request, response ) {
   response.send('Wahoo! restricted area, click to <a href="/logout">logout</a>')
-})
+} )
 
 app.get('/pug', (request, response) => {
   response.render('pug', { title: 'Hey Pug', message: 'Hello Pug!' })
@@ -64,7 +64,7 @@ function restrict(request, response, next) {
   if (request.session.user) {
     next()
   } else {
-    request.session.error = 'Access denied!';
+    request.session.error = 'Access denied!'
     response.redirect('/login')
   }
 }
