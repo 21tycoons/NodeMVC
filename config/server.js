@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var express = require('express')
-const app   = module.exports = express()
+const express = require('express')
+const app     = module.exports = express()
 
 // Config
 
