@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node config/server.js",
     "server": "node config/server.js",
-	"i": "yarn install"
+    "i": "yarn install"
   },
   "author": "21tycoons LLC",
   "description": "Node on wheels.",
