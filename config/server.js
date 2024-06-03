@@ -19,7 +19,7 @@ require('../app/middleware/session')
 
 // Controllers
 
-require('../app/controllers/ApplicationController')
+require('../app/controllers/application_controller')
 
 const PORT = process.env.PORT || 3100
 
