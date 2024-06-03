@@ -17,5 +17,5 @@ app.use( function ( request, response, next ) {
   response.locals.message = ''
   if ( error ) response.locals.message = '<p class="msg error">' + error + '</p>'
   if (message) response.locals.message = '<p class="msg success">' + message + '</p>'
-  next( )
+  next()
 } )
