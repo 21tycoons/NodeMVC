@@ -5,7 +5,7 @@
  */
 
 var express = require('express')
-const app = module.exports = express()
+const app   = module.exports = express()
 
 // Config
 
