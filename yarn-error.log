@@ -1,0 +1,63 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/22.1.0/bin/node /opt/homebrew/bin/yarn s
+
+PATH: 
+  /Users/liroyleshed/.bun/bin:/Users/liroyleshed/.rbenv/shims:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  22.1.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/liroyleshed/Software/NodeMVC/package.json: Expected double-quoted property name in JSON at position 272 (line 10 column 3)
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "Node-On-Wheels",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "node config/server.js",
+      "dev": "node config/server.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "s": "node config/server.js",
+  	"server": "node config/server.js",
+    },
+    "author": "21tycoons LLC",
+    "description": "",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "bootstrap": "^5.3.3",
+      "ejs": "^3.1.10",
+      "express": "^4.19.2",
+      "express-session": "^1.18.0",
+      "flash": "^1.1.0",
+      "mongoose": "^8.3.4",
+      "morgan": "^1.10.0",
+      "mustache": "^4.2.0",
+      "mustache-express": "^1.3.2",
+      "nodemailer": "^6.9.13",
+      "pbkdf2-password": "^1.2.1",
+      "pug": "^3.0.2",
+      "stripe": "^15.4.0"
+    },
+    "devDependencies": {
+      "@tailwindcss/forms": "^0.5.7",
+      "tailwindcss": "^3.4.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
