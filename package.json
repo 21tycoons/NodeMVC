@@ -9,7 +9,7 @@
     "server": "node config/server.js"
   },
   "author": "21tycoons LLC",
-  "description": "",
+  "description": "Node on wheels.",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "ejs": "^3.1.10",
