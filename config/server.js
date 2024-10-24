@@ -22,7 +22,9 @@ require('../app/middleware/session')
 require('../app/controllers/application_controller')
 
 // Models
+// ...
 
+// Set default port
 const PORT = process.env.PORT || 3100
 
 startServer()
