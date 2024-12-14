@@ -1,1 +1,1 @@
-Just a simple MVC in Node.
+Just a simple MVC in Node. Feel free to browse the source. No design.
